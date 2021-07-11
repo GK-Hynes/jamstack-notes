@@ -23,3 +23,47 @@ By contrast, with the Jamstack, a CDN/static server handles HTTP routing and ser
 Jamstack is about having assets pre-rendered, leveraging the browser and operating without a web server.
 
 With Jamstack, the stack has moved up a level to the browser.
+
+Aaron Schwartz used the phrase "Bake, don't fry" to describe preparing a response ahead of time, rather than serving it up on demand.
+
+Motives for pre-rendering:
+
+- You do the work now so your servers don't have to later.
+- It puts distance between the complexity and the user.
+
+This can simplify deployments.
+
+Traditionally, deployments require updates in lockstep to happen to each link: the CDN, load balancer, web server and database server.
+
+With the Jamstack, deployment essentially means updating one resource (the CDN) in a known, prediuctable way.
+
+You can leverage version control for everything.
+
+Other advantages of Jamstack:
+
+- security
+- performance
+- scale
+
+Jamstack offers a greatly reduced surface area. There are far fewer moving parts to attack. The more infrastructure you have, the more you have to secure. There is no server more secure than the one that doesn't exist.
+
+Traditional stacks often add **static layers** to improve performance, that means caching.
+
+With Jamstack, every time you do a deplpoyment to your CDN you are effectively updating the entire serving cache.
+
+Caching is hard. The more you can simplify the model of caching, the better.
+
+Traditional stacks **add infrastructure** in order to scale. More servers mean more costs and more complexity.
+
+By design, in the Jamstack everything is cached so you are in an optimal position, serving everything from a CDN designed to handle high load.
+
+Jamstack benefits from enablers:
+
+- static site generators
+- tooling and automation
+- browser capabilities
+- services and the API economy
+
+Static site genrators combine templates and data to generate resources at build time rather than at request time.
+
+With the API economy, companies now offer services that you would previously have had to build in-house.
