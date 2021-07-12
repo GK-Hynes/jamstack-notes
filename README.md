@@ -67,3 +67,11 @@ Jamstack benefits from enablers:
 Static site genrators combine templates and data to generate resources at build time rather than at request time.
 
 With the API economy, companies now offer services that you would previously have had to build in-house.
+
+### Rendering
+
+Client-Side Rendering (CSR) - JavaScript is executed in the browser to manipulate the DOM at request time
+
+Server-Side Rendering (SSR) - Markup can be generated on request in the server and transmitted to the client. Markup can also be generated at build time so that it's ready to transmit to the client when needed.
+
+With both client-side rendering and server-side rendering at build time, per request you don't need to execute any logic on the server.
