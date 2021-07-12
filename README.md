@@ -75,3 +75,11 @@ Client-Side Rendering (CSR) - JavaScript is executed in the browser to manipulat
 Server-Side Rendering (SSR) - Markup can be generated on request in the server and transmitted to the client. Markup can also be generated at build time so that it's ready to transmit to the client when needed.
 
 With both client-side rendering and server-side rendering at build time, per request you don't need to execute any logic on the server.
+
+### Static Site Generators
+
+A static site generator is a script that takes in data, content and templates, processes them, and outputs a folder full of the resulting pages and assets.
+
+Choosing a static site genrator can depend on: language, workflow, performance, architecture, output control and level of adoption.
+
+For example, [Eleventy](https://www.11ty.dev/) has a logical architecture, flexible templating, does nothing you don't ask for and is JavaScript all the way down.
