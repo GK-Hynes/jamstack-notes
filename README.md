@@ -83,3 +83,15 @@ A static site generator is a script that takes in data, content and templates, p
 Choosing a static site genrator can depend on: language, workflow, performance, architecture, output control and level of adoption.
 
 For example, [Eleventy](https://www.11ty.dev/) has a logical architecture, flexible templating, does nothing you don't ask for and is JavaScript all the way down.
+
+### Pulling in data with APIs
+
+Data sources can include: headless content management systems, pricing engines, ecommerce engines, stock levels, tweets, newsfeeds and on and on.
+
+You can pull that content in at build time using APIs.
+
+By only calling data at build-time, the number of requests depends on the number of builds, not the number of visitors to your site/app. This can greatly reduce the load on your data source.
+
+You can trigger a build when the data changes so that you only build when there is an update to show.
+
+### Personalization
