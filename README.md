@@ -78,7 +78,7 @@ With both client-side rendering and server-side rendering at build time, per req
 
 ### Static Site Generators
 
-A static site generator is a script that takes in data, content and templates, processes them, and outputs a folder full of the resulting pages and assets.
+A static site generator is a tool that takes in data, content and templates, processes them, and outputs a folder full of the resulting pages and assets.
 
 Choosing a static site genrator can depend on: language, workflow, performance, architecture, output control and level of adoption.
 
@@ -92,6 +92,18 @@ You can pull that content in at build time using APIs.
 
 By only calling data at build-time, the number of requests depends on the number of builds, not the number of visitors to your site/app. This can greatly reduce the load on your data source.
 
-You can trigger a build when the data changes so that you only build when there is an update to show.
+You can trigger a build to run every couple of minutes to keep the data fresh or when the data changes so that you only build when there is an update to show.
 
 ### Personalization
+
+Just because a site is pre-generated, doesn't mean it can't be personalized.
+
+Sites exist on a spectrum from fully universal to fully personalized content. This spectrum also contains localized and internationalized content and content targeted to groups (for example, admin roles).
+
+Jamstack can actually address the entire spectrum; it's a question of how much you do in the browser with client-side JavaScript.
+
+The services provided by the API economy are key for personalization and localization.
+
+Since all of your assets are on the CDN, adding some relatively simple logic there can route different people to different assets.
+
+It is getting easier to configure CDNs. With Netlify a redirects file lets you redirect by country or language. 
