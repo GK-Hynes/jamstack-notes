@@ -106,4 +106,16 @@ The services provided by the API economy are key for personalization and localiz
 
 Since all of your assets are on the CDN, adding some relatively simple logic there can route different people to different assets.
 
-It is getting easier to configure CDNs. With Netlify a redirects file lets you redirect by country or language. 
+It is getting easier to configure CDNs. With Netlify a redirects file lets you redirect by country or language.
+
+Jamstack lets you:
+
+- generate views for many locales
+- route traffic at the CDN
+- generate a CDN config based off your data
+
+### Progressive Enhancement
+
+1. decide on what's critical to the experience
+2. deliver as much as possible using as little as possible
+3. detect supported features and enhance where possible
