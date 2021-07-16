@@ -119,3 +119,9 @@ Jamstack lets you:
 1. decide on what's critical to the experience
 2. deliver as much as possible using as little as possible
 3. detect supported features and enhance where possible
+
+One problem with making API calls from the client is that they are exposed. This has been one reason for making these calls from a serever.
+
+Services like Netlify now mean you can proxy these API calls through a serverless function, keeping your API secrets safe.
+
+Serverless functions blur the lines of Jamstack, being a close ally of Jamstack if not part of the Jamstack itself.

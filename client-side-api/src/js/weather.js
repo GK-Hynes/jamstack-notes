@@ -1,6 +1,6 @@
 function success(pos) {
-  const API_KEY = "cc09a94c0edcb18b48da45508130b513";
-  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${pos.coords.latitude}&lon=${pos.coords.longitude}&appid=${API_KEY}&units=metric`;
+  
+  const url = `/.netlify/functions/weatherapi?lat=${pos.coords.latitude}&lon=${pos.coords.longitude}&units=metric`;
 
   fetch(url)
     .then((response) => response.json())
@@ -10,6 +10,8 @@ function success(pos) {
       document.querySelector("#temp").textContent = data.main.temp;
       document.querySelector("#main").textContent = data.weather[0].main;
       document.querySelector("#desc").textContent = data.weather[0].description;
+
+      document.querySelector("#weather").classList.remove("hidden");
     });
 }
 
