@@ -8,7 +8,7 @@ But now the server needed to have enough capacity to service every request. This
 
 Over time, browsers got more capable, processes matured and tooling improved.
 
-So, what is the Jamstack?
+### What is the Jamstack?
 
 Jamstack stands for JavaScript, APIs and Markup.
 
@@ -64,7 +64,7 @@ Jamstack benefits from enablers:
 - browser capabilities
 - services and the API economy
 
-Static site genrators combine templates and data to generate resources at build time rather than at request time.
+Static site generators combine templates and data to generate resources at build time rather than at request time.
 
 With the API economy, companies now offer services that you would previously have had to build in-house.
 
@@ -125,3 +125,15 @@ One problem with making API calls from the client is that they are exposed. This
 Services like Netlify now mean you can proxy these API calls through a serverless function, keeping your API secrets safe.
 
 Serverless functions blur the lines of Jamstack, being a close ally of Jamstack if not part of the Jamstack itself.
+
+The growing ecosystem of tools and services lets you move beyond static.
+
+![Overview of the Jamstack ecosystem by Astasia Myers from Redpoint](./jamstack-ecosystem.jpeg)
+
+### Introducing the Jamstack to existing infrastructure
+
+Don't try to boil the ocean. Don't attempt a bulk move of everything to the Jamstack.
+
+Take [CSS-Tricks](https://css-tricks.com/) for example. The main site runs on Wordpress but their [Conferences site](https://conferences.css-tricks.com/) is a Jamstack site on its own subdomain.
+
+By adding redirects to your CDN, you can start adding layers of Jamstack sites in front of your existing infrastructure.
